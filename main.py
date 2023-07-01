@@ -37,4 +37,6 @@ def zip_folder(root_folder, exclusion_file, output_zip, zip_name):
                         # Agregar el archivo al ZIP
                         zipf.write(file_path, zip_path)
     except Exception as e:
-        print(f'Error: {str(e)}')                        
+        print(f'Error: {str(e)}')     
+
+                        
