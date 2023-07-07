@@ -18,8 +18,9 @@ def zip_folder(root_folder, exclusion_file, output_zip, zip_name):
             # Recorrer todas las carpetas y archivos
             for root, dirs, files in os.walk(root_folder):
                 # Eliminar las carpetas excluidas de la lista de directorios
-                dirs[:] = [d for d in dirs if os.path.join(root, d) not in exclusions]
-                
+                #dirs[:] = [d for d in dirs if os.path.join(root, d) not in exclusions]
+                dirs[:] = [d for d in dirs if d not in exclusions]
+                                
                 for file in files:
                     file_path = os.path.join(root, file)
                     
