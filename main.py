@@ -3,6 +3,10 @@ import zipfile
 
 def zip_folder(root_folder, exclusion_file, output_zip, zip_name):
     try:
+        print(root_folder)
+        print(exclusion_file)
+        print(output_zip)
+        print(zip_name)
         # Construyo ruta completa al zip
         output_zip = output_zip + f"\{zip_name}"
 
