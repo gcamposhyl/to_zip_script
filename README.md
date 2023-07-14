@@ -24,3 +24,5 @@ exclusion_file = r'c:\Users\dev-h\OneDrive\Escritorio\proyectos_python\test_inpu
 output_zip = r'c:\Users\dev-h\OneDrive\Escritorio\proyectos_python\test_output'
 # nombre zip
 zip_name = 'output.zip'
+
+c:\Users\dev-h\OneDrive\Escritorio\proyectos_python\test_output\output.zip

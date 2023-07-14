@@ -3,12 +3,12 @@ import configparser
 import os
 import re
 
-def deploy_to_pa(ruta_archivo_local):
+def deploy_to_pa(ruta_archivo_local, ruta_archivo_remoto):
 
     path = os.path.dirname(os.path.abspath(__file__))
 
     config_file = re.sub(r'\\', '/', path) + \
-        "/config/config.ini"
+        "/config.ini"
 
     config = configparser.ConfigParser()
     config.read(config_file)
@@ -32,7 +32,7 @@ def deploy_to_pa(ruta_archivo_local):
     #ruta_archivo_local = r'C:\Users\dev-h\OneDrive\Escritorio\proyectos_python\to_zip_script\requirements.txt'
 
     # Ruta del archivo en PythonAnywhere donde deseas subirlo
-    ruta_archivo_remoto = '/home/gcamposhyl/nombre_archivo.txt'
+    #ruta_archivo_remoto = '/home/gcamposhyl/nombre_archivo.zip'
 
     # Subir el archivo local a PythonAnywhere
     with open(ruta_archivo_local, 'rb') as archivo:
